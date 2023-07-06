@@ -6,9 +6,9 @@
 
 [![NPM](https://nodei.co/npm/iobroker.knx.png?downloads=true)](https://nodei.co/npm/iobroker.knx/)
 
-#### Table of content
+#### Table of contents
 
-* [Description](#description)
+* [Introduction](#introduction)
 * [Requirements](#requirements)
 * [Features](#features)
 * [Installation](#installation)
@@ -25,7 +25,25 @@
 * [Planned features](#planned-features)
 * [Changelog](#changelog)
 
-## Description
+## Introduction
+Welcome to the ioBroker KNX Adapter. This repository houses the KNX adapter for the ioBroker home automation platform. The KNX adapter allows seamless integration between the ioBroker system and KNX-based home automation devices, enabling you to quickly control and automate your home. ioBroker is an open-source home automation platform that combines various smart devices, systems, and services into a unified and flexible ecosystem. With ioBroker, you can create complex automation scenarios, monitor and control devices, and integrate different technologies to suit your needs
+
+## About the KNX Adapter
+The ioBroker KNX adapter is a powerful tool that connects your ioBroker installation with KNX-based devices. KNX (Konnex) is an internationally recognized home and building automation standard, allowing you to control lighting, heating, blinds, and more.
+
+The KNX adapter facilitates bi-directional communication between the ioBroker system and the KNX bus. It enables you to read and write data to KNX devices, monitor their states, and trigger actions based on KNX events. With the KNX adapter, you can fully leverage the capabilities of your KNX installation within the ioBroker ecosystem.
+
+## Features
+* **Bidirectional Communication**: The KNX adapter enables seamless bidirectional communication between your ioBroker system and KNX devices. Read data from KNX sensors and control KNX actuators directly from ioBroker.
+
+* **Flexible Configuration**: Easily configure and manage KNX devices and their addresses using the intuitive user interface provided by the adapter. Define group addresses, assign datapoints, and customize settings effortlessly.
+
+* **Automation Scenarios**: Create advanced automation scenarios by combining KNX devices with other adapters and services within ioBroker. Use rules, scripts, and visual programming to orchestrate complex workflows and make your home smarter.
+
+* **Event Triggers**: Respond to events from KNX devices and take actions within the ioBroker ecosystem. Trigger lighting scenes, adjust temperature settings, or activate specific routines based on KNX events.
+
+* **Visualization and Control**: Monitor and control your KNX devices through the ioBroker web interface or the ioBroker mobile app. Create customized dashboards and visualizations to suit your preferences and have complete control over your KNX installation.
+
 
 en: This adapter allows importing of knxproj Files from ETS. It generates the translation between KNX- group addresses and ioBroker and puts the devices into rooms (esp. for MobileUI).
 
@@ -71,13 +89,13 @@ Additionally you need a license to use the adapter. The license editions are ava
 * NEW: adapter responses to GroupValueRead to a directLink connected object
 * NEW: import of passwort protected project files (thanks to aKzenT)
 
-###Installation
+### Installation
 This adapter is only installable with npm. Installation via github does **not** work.
 
-##Adapter configuration
+## Adapter configuration
 After installing this adapter, open the adapter configuration.
 
-###Install the License
+### Install the License
 The first step is to apply the license. If you have not installed a license, then 500 Datapoints are applied.
 
 * (1) shows your System ID, you need this to get a license
@@ -165,7 +183,7 @@ This results e.g. in a value like "0,5", where "0" means "decrease" and "5" mean
     all GA's marked with "Read" Flag are checked at start. This can affect a higher bus traffic. In the end
     are all states up to date.
 
-###Avoidance of problems
+### Avoidance of problems
 
 * clean ETS programming and more important clean ETS programming and most important clean ETS programming
 * Assign the DPTs!!
